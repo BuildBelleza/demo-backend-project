@@ -6,5 +6,5 @@ server.get('/heartbeat', (req, res) => {
     res.json({ is: 'working' })
 });
 
-server.listen(8080, () => console.log('API running on port 8080'));
+server.listen(8080, () => console.log('The server is running on port 8080'));
 
