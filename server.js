@@ -13,7 +13,12 @@ server.set('view engine', 'html');
 server.use(express.static(__dirname + '/public'));
 
 server.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', {
+    partials: {   
+    footer: 'partials/footer',
+    header: 'partials/header',
+    main: 'partials/main/landing' 
+    }});
 });   // this is the home page
 
 const PORT = process.env.PORT || 8080;
