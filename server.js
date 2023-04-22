@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 
 server.get('/heartbeat', (req, res) => {
     res.json({ is: 'working',
-"status": "good" })
+    "status": "good" })
 });
 
 server.listen(PORT, () => console.log('The server is running on port 8080.'));
