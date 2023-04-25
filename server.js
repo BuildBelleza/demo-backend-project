@@ -21,6 +21,15 @@ server.get('/', (req, res) => {
     }});
 });   // this is the home page
 
+server.get('/login', (req, res) => {
+    res.render('index', {
+    partials: {   
+    footer: 'partials/footer',
+    header: 'partials/header',
+    main: 'partials/main/login' 
+    }});
+}); 
+
 const PORT = process.env.PORT || 8080;
 
 server.get('/heartbeat', (req, res) => {
