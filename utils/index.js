@@ -1,4 +1,4 @@
-function setMainView(view) {
+function setMainView(view){
    return {
     footer: 'partials/footer',
     header: 'partials/header',
@@ -6,4 +6,6 @@ function setMainView(view) {
    } 
 }
 
-module.export = { setMainView };
+module.export = { setMainView }
+
+
