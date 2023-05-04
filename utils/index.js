@@ -8,4 +8,6 @@ function setMainView(view){
 
 module.export = { setMainView }
 
+// Path: views\index.html
+
 
